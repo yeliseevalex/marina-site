@@ -1,0 +1,191 @@
+html, body{
+    margin: 0;
+    font-family: "Playfair", serif;
+    background-color: #FAF9F6;
+}
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+/*SECTION 1*/
+.div-main-book-section-1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.div-left-book{
+    width: 33.33%;
+}
+
+.div-right-book{
+    width: 33.33%;
+}
+
+.img-left-book{
+    display: flex;
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+
+.div-center-book {
+    width: 33.33%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: clamp(30px, 5vh, 50px) 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-text-center-book {
+    text-align: center;
+    margin-bottom: clamp(30px, 5vh, 50px);
+}
+
+.main-text-book {
+    font-size: clamp(24px, 3vw, 40px);
+    color: #817773;
+    margin-bottom: 1rem;
+}
+
+.sub-text-book {
+    font-size: clamp(16px, 1.5vw, 22px);
+    color: #817773;
+}
+
+/* Форма */
+.div-booking-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 2vh, 30px);
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #817773;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form-item-number {
+    width: 10%;
+    background: #817773;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item-number span {
+    color: #fff;
+    font-weight: 500;
+    font-size: clamp(20px, 2.5vw, 28px);
+}
+
+.form-item-input {
+    flex: 1;
+    padding: 12px 16px;
+}
+
+.form-item-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: clamp(16px, 1.5vw, 18px);
+    font-weight: 300;
+    color: #817773;
+}
+
+.btn-second-non-active{
+    width: clamp(200px, 15vw, 300px);
+    height: clamp(50px, 3.5vw, 70px);
+    color: #FAF9F6;
+    background-color: #9E9794;
+    border: 1.5px solid #FAF9F6;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: clamp(22px, 1.8vw, 34px);
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-second-non-active:hover {
+    color: #FAF9F6;
+    background-color: #817773;
+}
+
+
+/*SECTION 2*/
+.div-main-faq-section-2 {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.div-left-faq {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: height 0.5s ease; /* плавная подстройка высоты */
+    height: 50vh; /* изначальная высота 75% экрана */
+}
+
+.img-left-faq {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: height 0.5s ease;
+    min-height: 50vh;
+}
+
+.div-right-faq {
+    width: 55%;
+}
+
+.main-text-faq {
+    font-size: clamp(24px, 2.5vw, 36px);
+    color: #817773;
+    margin-bottom: 2rem;
+}
+
+/* Аккордеон */
+.faq-item {
+    border: 1px solid #817773;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 16px 20px;
+    background: #f5f5f5;
+    cursor: pointer;
+    font-weight: 500;
+    color: #817773;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: #e0e0e0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    color: #817773;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    padding: 16px 20px;
+}
+

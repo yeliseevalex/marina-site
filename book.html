@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="book.css">
+</head>
+<body>
+    <!--BOOK PAGE SECTION 1-->
+    <section class="book-section-1">
+        <div class="div-main-book-section-1">
+            <div class="div-left-book">
+                <img src="images/book/first-section1.png" alt="" class="img-left-book">
+                <img src="images/book/second-section1.png" alt="" class="img-left-book">
+            </div>
+            
+             <div class="div-center-book">
+                <div class="div-text-center-book">
+                    <h2 class="main-text-book">КОНСУЛЬТАЦИЯ</h2>
+                    <span class="sub-text-book">
+                        Вы всегда можете написать мне
+                        в любом удобном для Вас мессенджере
+                    </span>
+                </div>
+
+                <form class="div-booking-form">
+                    <div class="form-item">
+                        <div class="form-item-number">
+                            <span>1</span>
+                        </div>
+                        <div class="form-item-input">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="form-item-number">
+                            <span>2</span>
+                        </div>
+                        <div class="form-item-input">
+                            <input type="tel" placeholder="Номер телефона" required>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="form-item-number">
+                            <span>3</span>
+                        </div>
+                        <div class="form-item-input">
+                            <input type="text" placeholder="Мероприятие" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-second-non-active">Отправить</button>
+                </form>
+            </div>
+
+            
+            <div class="div-right-book">
+                <img src="images/book/third-section1.png" alt="" class="img-left-book">
+                <img src="images/book/fourth-section1.png" alt="" class="img-left-book">
+            </div>
+        </div>
+    </section>
+
+    <!--BOOK PAGE SECTION 2-->
+    <section class="book-section-2">
+        <div class="div-main-faq-section-2">
+            <div class="div-left-faq">
+                <img src="images/book/faq.png" alt="" class="img-left-faq" id="faqImage">
+            </div>
+
+            <div class="div-right-faq">
+                <h2 class="main-text-faq">КАКИЕ ВОПРОСЫ У ВАС МОГУТ ВОЗНИКНУТЬ?</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Длительность свадьбы</div>
+                    <div class="faq-answer">
+                        Всё зависит от формата: обычно церемония занимает около часа, а банкет — примерно пять.
+                        Но я не придерживаюсь жёстких рамок. Я всегда адаптирую тайминг под настроение, чтобы праздник проходил естественно и гармонично.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">От чего зависит цена?</div>
+                    <div class="faq-answer">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, atque earum error iusto labore molestiae, non nulla numquam perferendis porro quae qui quisquam tempore ut! Accusamus, earum fugit harum libero optio provident quas repellat temporibus vitae. Culpa doloremque earum explicabo ipsum porro quasi reprehenderit. Accusamus animi autem corporis cum ea ipsa iste libero placeat quasi repellat! Praesentium, quae, tenetur?
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Какие интерактивы?</div>
+                    <div class="faq-answer">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis earum est impedit ipsum iste minima, minus modi neque nisi quaerat ratione repudiandae rerum, sit soluta temporibus tenetur velit voluptas, voluptate voluptates. A blanditiis cupiditate deleniti, facilis fugit molestiae mollitia necessitatibus numquam obcaecati perferendis quo, quos sit, tenetur voluptatibus voluptatum.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Поможете в организации?</div>
+                    <div class="faq-answer">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at eos explicabo facere magnam natus nulla similique voluptate? At corporis cum cupiditate doloremque dolorum ducimus fugiat perferendis perspiciatis quibusdam totam.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<script>
+    const faqItems = document.querySelectorAll(".faq-item");
+const faqImage = document.getElementById("faqImage");
+
+faqItems.forEach(item => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+        // Закрываем все остальные
+        faqItems.forEach(i => i !== item && i.classList.remove("active"));
+
+        // Переключаем текущий
+        item.classList.toggle("active");
+
+        // Высота изображения
+        const activeAnswer = document.querySelector(".faq-item.active .faq-answer");
+        let minHeight = window.innerHeight * 0.75; // 75% высоты окна
+        if (activeAnswer) {
+            // высота = сумма всех вопросов + открытый ответ
+            let totalHeight = Array.from(faqItems).reduce((sum, i) => {
+                const qHeight = i.querySelector(".faq-question").offsetHeight;
+                const aHeight = i.classList.contains("active") ? i.querySelector(".faq-answer").scrollHeight : 0;
+                return sum + qHeight + aHeight;
+            }, 0);
+
+            // не меньше minHeight
+            faqImage.style.height = Math.max(totalHeight, minHeight) + "px";
+        } else {
+            // если все закрыты — оставляем исходную минимальную высоту
+            let baseHeight = Array.from(faqItems).reduce((sum, i) => sum + i.querySelector(".faq-question").offsetHeight, 0);
+            faqImage.style.height = Math.max(baseHeight, minHeight) + "px";
+        }
+    });
+});
+
+// Инициализация: выставляем минимальную высоту
+faqImage.style.height = (window.innerHeight * 0.75) + "px";
+
+</script>
+</body>
+</html>

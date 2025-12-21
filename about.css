@@ -1,0 +1,299 @@
+html, body{
+    margin: 0;
+    font-family: "Playfair", serif;
+    background-color: #FAF9F6;
+}
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+/*SECTION 1*/
+.div-split2{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.div-left{
+    width: 50%;
+}
+
+.main-about-img{
+    width: 100%;
+    height: 100%;
+    max-height: 1200px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.div-right{
+    width: 50%;
+    background-color: #FAF9F6;
+}
+
+.div-main-about-text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-about-text{
+    margin: clamp(5.7vh, 3vw, 90px) 0 clamp(1.9vh, 1vw, 30px) 0;
+    font-size: clamp(28px, 2.5vw, 45px);
+    color: #817773;
+    font-weight: normal;
+}
+
+.main-about-subtext{
+    font-size: clamp(16px, 1.4vw, 24px);
+    letter-spacing: 0.1em;
+    line-height: 1.94;
+    color: #817773;
+    max-width: 55ch;
+}
+
+
+/*SECTION 2*/
+.about-section-2{
+    margin-top: -5px;
+}
+
+.div-left-info-about{
+    width: 50%;
+    background-color: #817773;
+    color: #FAF9F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.first-info-about{
+    font-size: clamp(24px, 2vw, 36px);
+    line-height: 1.6;
+    font-style: italic;
+    max-width: 40ch;
+}
+
+.div-right-imgs-about{
+    width: 50%;
+}
+
+.div-two-imgs-about{
+    display: flex;
+}
+
+.img-info-about{
+    width: 50%;
+    object-fit: cover;
+}
+
+.div-left-imgs-about{
+    width: 50%;
+}
+
+.div-right-info-about{
+    width: 50%;
+    background-color: #817773;
+    color: #FAF9F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-info-numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-info-numbers:first-child{
+    margin-right: clamp(50px, 5vw, 120px);
+}
+
+.number-about-info{
+    font-size: clamp(28px, 4vw, 70px);
+    margin-bottom: clamp(20px, 1.9vh, 40px);
+}
+
+.text-number-about-info{
+    font-size: clamp(16px, 1.8vw, 32px);
+    font-weight: bold;
+}
+
+
+/*SECTION 3*/
+.div-left-facts-about{
+    width: 50%;
+    padding: clamp(50px, 8.5vh, 120px) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-text-facts{
+    margin: 0 0 clamp(3vh, 2vw, 50px) 0;
+    font-size: clamp(20px, 2.1vw, 43px);
+    color: #817773;
+    line-height: 1.9;
+    letter-spacing: 0.05em;
+}
+
+.div-fact-item{
+    border: 1px solid #817773;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.div-fact-item-number{
+    width: 15%;
+    background: #817773;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-left-facts-about .div-fact-item:not(:last-child) {
+     margin-bottom: clamp(30px, 5vh, 70px);
+}
+
+.fact-item-number{
+    font-family: 'Montagu Slab', serif;
+    font-weight: 500;
+    font-size: clamp(24px, 3.4vw, 64px);
+    line-height: 1.9;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.div-fact-item-text{
+    display: flex;
+    align-items: center;
+    padding-left: clamp(20px, 3vh, 50px);
+    width: 85%;
+}
+
+.fact-item-text{
+    font-weight: 300;
+    font-size: clamp(16px, 1.4vw, 24px);
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+    color: #817773;
+    text-transform: lowercase;
+    display: inline-block;
+    max-width: 40ch;
+}
+
+.div-right-fact-about{
+    width: 50%;
+}
+
+.img-fact-about{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    max-height: 950px;
+}
+
+/*SECTION 4*/
+
+.about-section-4 .div-split2{
+    flex-direction: row-reverse;
+}
+
+.about-section-4 .div-fact-item{
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+.about-section-4 .div-fact-item-text{
+    padding: 0;
+    display: contents;
+}
+
+.about-section-4 .fact-item-text{
+    padding-right: clamp(20px, 3vh, 50px);
+}
+
+
+/*FOOTER*/
+footer{
+     background-color: #817773;
+     padding: clamp(30px, 5vh, 55px) clamp(50px, 10vw, 120px);
+     color: #FAF9F6;
+ }
+
+ .div-split-footer{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .div-left-footer{
+     display: flex;
+ }
+
+.div-name-footer{
+    margin-left: clamp(10px, 2vw, 30px);
+}
+
+.text-name-footer{
+    margin: 0;
+    font-size: clamp(24px, 2.1vw, 40px);
+}
+
+.text-wedding-host-footer{
+    margin: 0;
+    font-size: clamp(18px, 1.2vw, 24px);
+    max-width: 440px;
+}
+
+ .div-bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(20px, 3vh, 35px);
+ }
+
+.left-bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-footer{
+    color: #FAF9F6;
+    font-size: clamp(16px, 1.8vw, 32px);
+}
+
+.left-bottom-footer .link-footer:not(:last-child) {
+     margin-right: clamp(50px, 7vw, 140px);
+}
+
+.center-bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.year-created-footer{
+    font-size: clamp(16px, 1.6vw, 30px);
+}
+
+.right-bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-social-media-footer .social-media:not(:last-child) {
+     margin-right: clamp(40px, 5vw, 100px);
+}
+
+.phone-footer, .mail-footer{
+    margin: 0;
+    font-size: clamp(16px, 1.8vw, 32px);
+}
+

@@ -1,0 +1,783 @@
+html, body{
+    margin: 0;
+    font-family: "Playfair", serif;
+}
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+.t-upper{
+    text-transform: uppercase;
+}
+
+.t-underline-b{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #817773;
+}
+
+.t-underline-w{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #FAF9F6;
+}
+
+
+section{
+    margin: 0;
+    width: 100%;
+ }
+
+.btn-main-non-active{
+    width: clamp(200px, 16vw, 300px);
+    height: clamp(50px, 3.8vw, 70px);
+    color: #FAF9F6;
+    background-color: #9E9794;
+    border: 1.5px solid #FAF9F6;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: clamp(24px, 2vw, 36px);
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-main-non-active:hover {
+    color: #817773;
+    background-color: #FAF9F6;
+}
+
+.btn-second-non-active{
+    width: 300px;
+    height: 70px;
+    color: #FAF9F6;
+    background-color: #9E9794;
+    border: 1.5px solid #FAF9F6;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: clamp(24px, 2vw, 36px);
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-second-non-active:hover {
+    color: #FAF9F6;
+    background-color: #817773;
+}
+
+/* FOOTER */
+footer{
+     background-color: #817773;
+     padding: clamp(30px, 5vh, 55px) clamp(50px, 10vw, 120px);
+     color: #FAF9F6;
+ }
+
+ .div-split-footer{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .div-left-footer{
+     display: flex;
+ }
+
+ .footer-logo {
+    width: clamp(160px, 12vw, 280px);
+    height: auto;
+    fill: none;
+}
+
+.div-name-footer{
+    margin-left: clamp(10px, 2vw, 30px);
+}
+
+.text-name-footer{
+    margin: 0;
+    font-size: clamp(24px, 2.1vw, 40px);
+}
+
+.text-wedding-host-footer{
+    margin: 0;
+    font-size: clamp(18px, 1.2vw, 24px);
+    max-width: 30ch;
+}
+
+ .div-bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(20px, 3vh, 35px);
+ }
+
+.left-bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-footer{
+    color: #FAF9F6;
+    font-size: clamp(16px, 1.8vw, 32px);
+}
+
+.left-bottom-footer .link-footer:not(:last-child) {
+     margin-right: clamp(50px, 7vw, 140px);
+}
+
+.center-bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.year-created-footer{
+    font-size: clamp(16px, 1.6vw, 30px);
+}
+
+.right-bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-social-media-footer .social-media:not(:last-child) {
+     margin-right: clamp(40px, 5vw, 100px);
+}
+
+.social-media {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-media:hover {
+    transform: scale(1.1);
+}
+
+
+.phone-footer, .mail-footer{
+    margin: 0;
+    font-size: clamp(16px, 1.8vw, 32px);
+}
+
+
+
+
+
+
+/* SECTION 1 */
+.section-1{
+    height: 100vh;
+}
+
+.div-split2{
+    display: flex;
+    width: 100%;
+}
+
+.div-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: #817773;
+}
+
+.div-left-head{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 8.5vh 0;
+}
+
+.logo-header{
+    display: flex;
+    align-items: start;
+}
+
+.main-title {
+    max-width: 22ch;
+    margin: 0;
+
+    font-family: "Playfair", serif;
+    font-weight: 400;
+    font-size: clamp(20px, calc(2.02vw), 40px);
+
+
+    color: #FAF9F6;
+}
+
+.logo-svg{
+    width: clamp(90px, 7vw, 140px);
+    height: auto;
+    fill: none;
+}
+
+.title-name{
+    margin: 0;
+    font-size: clamp(32px, 3vw, 64px);
+    color: #FAF9F6;
+}
+
+.div-buttons-section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-s1{
+    margin-bottom: 6vh;
+}
+
+.div-social-media{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media{
+    width: clamp(48px, 4.5vw, 75px);
+    height: auto;
+    fill: none;
+}
+
+.div-social-media .social-media:not(:last-child) {
+     margin-right: 5vw;
+}
+
+.div-right{
+    width: 50%;
+    display: flex;
+}
+
+.div-main-one-img{
+}
+
+.main-one-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* SECTION 2 */
+.div-small-split2{
+    display: flex
+}
+
+.div-two-images{
+    display: flex;
+    width: 50%;
+}
+
+.small-img{
+    width: 50%;
+}
+
+.div-small-split2-text{
+    width: 50%;
+    background-color: #FAF9F6;
+    color: #817773;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.p-first-small-split-text{
+    text-transform: uppercase;
+    font-size: clamp(28px, 2vw, 40px);
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+.p-small-split-text{
+    margin: 0;
+    max-width: 50ch;
+    font-size: clamp(16px, 1.4vw, 24px);
+    line-height: 1.95;
+    letter-spacing: 0.1em;
+}
+
+.section-2 .t-underline-b {
+    transition:
+        transform 0.25s ease,
+        text-shadow 0.25s ease;
+}
+
+.section-2 .t-underline-b:hover {
+    transform: scale(1.04);
+    text-shadow: 0 0 1px currentColor;
+}
+
+/* SECTION 3 */
+.section-3{
+    height: 100vh;
+}
+
+
+/* SECTION 4 */
+.div-left-imgs{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.text-upper-img {
+    max-width: 35vw;
+    position: absolute;
+    z-index: 2;
+    color: #FAF9F6;
+    font-size: clamp(28px, 2.5vw, 45px);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div-split-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.split-link {
+    display: block;
+    width: 100%;
+    height: 50%;
+    text-decoration: none;       /* убрать подчёркивание */
+    color: inherit;              /* сохранить цвет текста */
+}
+
+.div-split-vertical-el {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div-split-vertical-el::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.div-split-vertical-el .bg-img {
+    transition: transform 0.5s ease;
+}
+
+.div-split-vertical-el .text-upper-img {
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.div-split-vertical-el:hover .bg-img {
+    transform: scale(1.1);
+}
+
+.div-split-vertical-el:hover .text-upper-img {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+.div-right-services{
+    width: 50%;
+    display: flex;
+}
+
+.div-brown-services{
+    width: 100%;
+    background-color: #817773;
+    color: #FAF9F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+}
+
+.main-text-services{
+    font-size: clamp(28px, 2.5vw, 45px);
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 5vh;
+}
+
+.text-services{
+    font-size: clamp(16px, 1.4vw, 24px);
+    margin-bottom: 5vh;
+    max-width: 50ch;
+    letter-spacing: 0.12em;
+    line-height: 1.9;
+}
+
+.section-4 .btn-main-non-active{
+    width: clamp(160px, 13vw, 245px);
+    height: clamp(40px, 5.5vh, 56px);
+}
+
+.section-4 .t-underline-w {
+    transition:
+        transform 0.25s ease,
+        text-shadow 0.25s ease;
+}
+
+.section-4 .t-underline-w:hover {
+    transform: scale(1.04);
+    text-shadow: 0 0 1px currentColor;
+}
+
+
+
+/* SECTION 5 */
+.review-content {
+    position: absolute;
+    inset: 0;
+    background: #817773;
+    color: #FAF9F6;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .4s ease, transform .4s ease;
+    pointer-events: none;
+}
+
+.div-two-images.open .review-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.review-arrow{
+    width: clamp(15px, 1.4vw, 25px);
+    height: auto;
+    fill: none;
+}
+
+.review-arrow,
+.review-arrow-alt {
+    transition: transform .4s ease;
+}
+
+.div-two-images.open .review-arrow,
+.div-two-images.open .review-arrow-alt {
+    transform: rotate(180deg);
+}
+
+
+/* ---------- Общие блоки ---------- */
+.div-small-split-review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Контейнер с изображением */
+.div-two-images {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+/* Изображение */
+.review-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Скрытый блок с отзывом */
+.review-content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #817773;
+    color: #FAF9F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .4s ease, opacity .4s ease;
+    z-index: 2;
+}
+
+/* Начальное положение блока для анимации выезда */
+/* ПРАВЫЙ блок выезжает слева */
+.right-start {
+    transform: translateX(100%);
+}
+
+/* ЛЕВЫЙ блок выезжает справа */
+.left-start {
+    transform: translateX(-100%);
+}
+
+/* Открытые состояния */
+.div-two-images.right-open .review-content {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    flex-direction: column;
+}
+
+.div-two-images.left-open .review-content {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    flex-direction: column;
+}
+
+/* ---------- Оверлей и стрелки ---------- */
+.review-overlay {
+    position: absolute;
+    top: 0;
+    width: 10vw;
+    max-width: 160px;
+    height: 100%;
+    display: flex;
+    margin-right: 1vm;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+    transition: background 0.3s ease, width 0.5s ease, transform 0.5s ease;
+}
+
+/* Увеличение при наведении */
+.review-overlay:hover {
+    width: 12vw;
+}
+
+.review-overlay:hover .review-arrow {
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.left-overlay:hover .review-arrow {
+    animation-name: arrow-left;
+}
+
+/* Правая стрелка — двигается влево */
+.right-overlay:hover .review-arrow {
+    animation-name: arrow-right;
+}
+
+/* Плавное движение вправо */
+@keyframes arrow-left {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(0.4vw); }
+}
+
+/* Плавное движение влево */
+@keyframes arrow-right {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-0.4vw); }
+}
+
+/* Оверлей справа */
+.right-overlay {
+    flex-direction: row-reverse;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 77%);
+}
+
+/* Оверлей слева */
+.left-overlay {
+    left: 0;
+    background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 77%);
+}
+
+.left-overlay .review-text{
+    margin-left: 0.5em;
+}
+
+.right-overlay .review-text{
+    margin-right: 0.5em;
+}
+
+/* Текст на оверлее */
+.review-text {
+    color: #FAF9F6;
+    font-size: clamp(16px, 2vw, 18px);
+    letter-spacing: 0.15em;
+    line-height: 1.85;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Стрелки */
+.review-arrow,
+.review-arrow-alt {
+    transition: transform .4s ease;
+}
+
+/* Начальное положение стрелок */
+.right-overlay .review-arrow {
+    transform: rotate(0deg); /* смотрит влево */
+}
+
+.left-overlay .review-arrow {
+    transform: rotate(180deg); /* смотрит вправо */
+}
+
+/* Поворот стрелок при открытии */
+.div-two-images.right-open .review-arrow {
+    margin-right: 1.5em;
+    transform: rotate(180deg); /* вниз */
+}
+
+.div-two-images.left-open .review-arrow{
+    margin-left: 1.5em;
+    transform: rotate(0deg); /* вниз */
+}
+
+.div-two-images.right-open .review-text,
+.div-two-images.left-open .review-text
+{
+    display: none;
+}
+
+.div-two-images.right-open .review-overlay,
+.div-two-images.left-open .review-overlay{
+    background: none;
+}
+
+.review-open-main-text{
+    font-size: clamp(28px, 2vw, 40px);
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.review-open-text{
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 40ch;
+    font-size: clamp(20px, 1.5vw, 32px);
+    margin: 0;
+}
+
+/* ---------- Текст рядом с изображением ---------- */
+.div-small-split-review-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text-review {
+    text-transform: uppercase;
+    font-size: clamp(28px, 2vw, 40px);
+    line-height: 1.4;
+    letter-spacing: 0.15em;
+    color: #817773;
+    font-weight: 400;
+    max-width: 25ch;
+}
+
+.section-5 .t-underline-b {
+    transition:
+        transform 0.25s ease,
+        text-shadow 0.25s ease;
+}
+
+.section-5 .t-underline-b:hover {
+    transform: scale(1.04);
+    text-shadow: 0 0 1px currentColor;
+}
+
+/* SECTION 6 */
+/* ---------- Для слайдера (если нужно) ---------- */
+.section-6{
+    margin-bottom: 50px;
+}
+
+.div-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.div-slider-content {
+    display: flex;
+    transition: transform 0.1s linear; /* плавное движение */
+}
+
+.slider-img {
+    width: 25%;
+    flex-shrink: 0;
+    object-fit: cover;
+    max-height: 50vh;
+}
+
+
+
+/* SECTION 7 */
+.section-7 .div-split2{
+    margin: 10vh 0;
+}
+
+.div-left-steps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.div-3steps{
+    color: #817773;
+    margin-bottom: 7vh;
+}
+
+.span-step{
+    font-size: clamp(28px, 2vw, 40px);
+}
+
+.span-num-step{
+    font-size: clamp(35px, 2.5vw, 50px);
+    text-weight: 700;
+}
+
+.div-3steps .span-step:not(:last-child) {
+     margin-right: 5vw;
+}
+
+.div-right-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.right-text-steps{
+    color: #817773;
+    font-size: clamp(24px, 2vw, 36px);
+    line-height: 1.9;
+    max-width: 40ch;
+}
+
+.section-7 .btn-second-non-active{
+    width: 15vw;
+    height: 7.5vh;
+}
+
+img{
+width: 100%;}
