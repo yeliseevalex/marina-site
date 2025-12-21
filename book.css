@@ -189,3 +189,163 @@ html, body{
     padding: 16px 20px;
 }
 
+footer{
+     background-color: #817773;
+     padding: clamp(30px, 5vh, 55px) clamp(50px, 10vw, 120px);
+     color: #FAF9F6;
+ }
+
+ .div-split-footer{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .div-left-footer{
+     display: flex;
+ }
+
+ .footer-logo {
+    width: clamp(160px, 12vw, 280px);
+    height: auto;
+    fill: none;
+}
+
+.div-name-footer{
+    margin-left: clamp(10px, 2vw, 30px);
+}
+
+.text-name-footer{
+    margin: 0;
+    font-size: clamp(24px, 2.1vw, 40px);
+}
+
+.text-wedding-host-footer{
+    margin: 0;
+    font-size: clamp(18px, 1.2vw, 24px);
+    max-width: 30ch;
+}
+
+ .div-bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(20px, 3vh, 35px);
+ }
+
+.left-bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-footer{
+    color: #FAF9F6;
+    font-size: clamp(16px, 1.8vw, 32px);
+}
+
+.left-bottom-footer .link-footer:not(:last-child) {
+     margin-right: clamp(50px, 7vw, 140px);
+}
+
+.center-bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.year-created-footer{
+    font-size: clamp(16px, 1.6vw, 30px);
+}
+
+.right-bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-social-media-footer .social-media:not(:last-child) {
+     margin-right: clamp(40px, 5vw, 100px);
+}
+
+.social-media {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-media:hover {
+    transform: scale(1.1);
+}
+
+
+.phone-footer, .mail-footer{
+    margin: 0;
+    font-size: clamp(16px, 1.8vw, 32px);
+}
+
+.header{
+    background: #817773;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 5vw;
+}
+
+.div-col-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-header {
+    width: clamp(85px, 7.5vw, 150px);
+    height: auto;
+    fill: none;
+}
+
+.header-name{
+    color: #FAF9F6;
+    font-size: clamp(24px, 2vw, 36px);
+    margin-left: 1.8vw;
+    font-weight: 700;
+}
+
+.div-links-header{
+
+}
+
+.header .div-links-header .link-header:not(:last-child) {
+     margin-right: 3.5vw;
+}
+
+.link-header{
+    text-decoration: none;
+    color: #FAF9F6;
+    font-size: clamp(16px, 1.8vw, 32px);
+}
+
+
+.header .div-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .social-media{
+    width: clamp(35px, 3vw, 55px);
+    height: auto;
+    fill: none;
+}
+
+.header .div-social-media .social-media:not(:last-child) {
+     margin-right: 4vw;
+}
+
+.header .social-media {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.header .social-media:hover {
+    transform: scale(1.1);
+}
+
+
