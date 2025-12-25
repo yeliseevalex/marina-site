@@ -38,23 +38,42 @@ section{
     display: flex;
     flex-direction: column;
     padding-top: 5vh;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1em;
 }
 
 .main-wedding-text{
     margin: 0;
     margin-bottom: 3vh;
-    font-size: clamp(28px, 2.5vw, 45px);
+    font-size: clamp(28px, 2.2vw, 45px);
     color: #817773;
     font-weight: normal;
 }
 
 .main-wedding-subtext{
-    font-size: clamp(16px, 1.4vw, 24px);
+    font-size: clamp(16px, 1.3vw, 24px);
     letter-spacing: 0.15em;
-    line-height: 1.84;
+    line-height: 1.8;
     color: #817773;
     max-width: 65ch;
     text-align: justify;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.wedding-subtext-italic{
+    font-family: 'Playfair';
+    font-style: italic;
+    font-weight: 400;
+}
+
+.wedding-subtext-bold{
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 900;
 }
 
 
@@ -114,12 +133,15 @@ section{
 }
 
 .text-in-container{
-    font-size: clamp(16px, 1.6vw, 30px);
+    font-size: clamp(16px, 1.5vw, 30px);
     color: #817773;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 600;
 }
 
 .btn-second-non-active{
-    width: clamp(200px, 15vw, 300px);
+    width: clamp(160px, 12vw, 300px);
     height: clamp(50px, 3.5vw, 70px);
     color: #FAF9F6;
     background-color: #9E9794;
@@ -242,30 +264,41 @@ section{
 }
 
 .slide-text {
+    display: inline;
     font-size: clamp(16px, 1.4vw, 24px);
     line-height: 1.85;
     letter-spacing: 0.15em;
     margin-top: 10px;
     color: #817773;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
 }
+
 .read-more-text {
-    color: #817773;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: underline; /* выглядит как ссылка */
-    margin-left: 4px;
+  display: inline;
+  font-size: clamp(16px, 1.4vw, 24px);
+  margin-left: 4px;
+  color: #817773;
+  line-height: 1.85;
+letter-spacing: 0.15em;
+  cursor: pointer;
+  font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 700;
 }
 
 
 .slide-text-wrapper {
-    max-height: 18em;        /* показываем примерно 3 строки текста */
-    overflow: hidden;          /* скрываем остальное */
+    display: inline;         /* сколько строк показывать */
+    overflow: hidden;
     transition: max-height 0.5s ease;
 }
 
 .slide-text-wrapper.expanded {
-    max-height: 1000px;       /* достаточно, чтобы показать весь текст */
-    overflow-y: auto;          /* появится скролл при необходимости */
+    -webkit-line-clamp: unset;
+    max-height: 60%;
+    overflow-y: auto;
 }
 
 /* THUMBS */
@@ -278,14 +311,9 @@ section{
 .slide-thumbs img {
     width: calc(33.33% - 6px);
     border-radius: 8px;
-    cursor: pointer;
-    transition: .3s;
     object-fit: cover;
 }
 
-.slide-thumbs img:hover {
-    transform: scale(1.05);
-}
 
 /* ARROWS */
 .slider-arrow {
@@ -310,98 +338,96 @@ section{
 .slider-arrow.right {
     right: 20px;
 }
+.slide-left {
+    position: relative;
+    overflow: hidden;
+}
 
-footer{
-     background-color: #817773;
-     padding: clamp(30px, 5vh, 55px) clamp(50px, 10vw, 120px);
-     color: #FAF9F6;
- }
+/* Отзыв занимает всё изображение при открытии */
+.review-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #817773;
+    padding: 4vw;
+    box-sizing: border-box;
+    transition: bottom 0.5s ease;
+    z-index: 1;
+    overflow-y: auto;
+}
 
- .div-split-footer{
+/* Overlay с кнопкой */
+.bottom-overlay {
     display: flex;
-    justify-content: space-between;
- }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(360deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    color: #FAF9F6;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
 
- .div-left-footer{
-     display: flex;
- }
-
- .footer-logo {
-    width: clamp(160px, 12vw, 280px);
+/* Стрелка */
+.review-arrow{
+    transform: rotate(90deg);
+    width: clamp(15px, 1.4vw, 25px);
     height: auto;
     fill: none;
+    transition: transform 0.5s ease;
 }
 
-.div-name-footer{
-    margin-left: clamp(10px, 2vw, 30px);
+/* Класс при открытии */
+.bottom-open .review-content {
+    bottom: 0;
 }
 
-.text-name-footer{
-    margin: 0;
-    font-size: clamp(24px, 2.1vw, 40px);
+/* Поворот стрелки и скрытие текста */
+.bottom-open .review-arrow {
+    transform: rotate(270deg); /* исходно 90, при открытии 270 = 180° поворот */
 }
 
-.text-wedding-host-footer{
-    margin: 0;
-    font-size: clamp(18px, 1.2vw, 24px);
-    max-width: 30ch;
+.bottom-open .review-text {
+    opacity: 0;
+    visibility: hidden;
 }
 
- .div-bottom-footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: clamp(20px, 3vh, 35px);
- }
-
-.left-bottom-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Стрелка перемещается наверх при открытии */
+.bottom-open .bottom-overlay {
+    top: 0;
+    bottom: auto;
+    background: none;
 }
 
-.link-footer{
+.review-open-text{
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
+    clamp(12px, 1.5vw, 20px);
+    line-height: 1.8;
+    letter-spacing: 0.1em;
     color: #FAF9F6;
-    font-size: clamp(16px, 1.8vw, 32px);
 }
 
-.left-bottom-footer .link-footer:not(:last-child) {
-     margin-right: clamp(50px, 7vw, 140px);
+.read-more-text-review{
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 700;
+    clamp(12px, 1.5vw, 20px);
+    line-height: 180%;
+    letter-spacing: 0.1em;
+    color: #FAF9F6;
+    cursor: pointer;
 }
 
-.center-bottom-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.year-created-footer{
-    font-size: clamp(16px, 1.6vw, 30px);
-}
-
-.right-bottom-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.div-social-media-footer .social-media:not(:last-child) {
-     margin-right: clamp(40px, 5vw, 100px);
-}
-
-.social-media {
-    display: inline-block;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.social-media:hover {
-    transform: scale(1.1);
-}
-
-
-.phone-footer, .mail-footer{
-    margin: 0;
-    font-size: clamp(16px, 1.8vw, 32px);
-}
 
 .header{
     background: #817773;

@@ -110,14 +110,23 @@ html, body{
     font-size: clamp(28px, 2.5vw, 45px);
     color: #817773;
     font-weight: normal;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.94;
+    letter-spacing: 0.1em;
 }
 
 .main-about-subtext{
-    font-size: clamp(16px, 1.4vw, 24px);
+    font-size: clamp(16px, 1.3vw, 24px);
     letter-spacing: 0.1em;
     line-height: 1.94;
     color: #817773;
-    max-width: 55ch;
+    max-width: 60ch;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
+    color: #817773;
 }
 
 
@@ -137,10 +146,13 @@ html, body{
 }
 
 .first-info-about{
-    font-size: clamp(24px, 2vw, 36px);
+    font-size: clamp(24px, 1.8vw, 36px);
     line-height: 1.6;
     font-style: italic;
     max-width: 40ch;
+    font-family: "Playfair", serif;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .div-right-imgs-about{
@@ -180,13 +192,18 @@ html, body{
 }
 
 .number-about-info{
-    font-size: clamp(28px, 4vw, 70px);
+    font-size: clamp(28px, 3.5vw, 70px);
     margin-bottom: clamp(20px, 1.9vh, 40px);
+    font-family: 'Montagu Slab';
+    font-style: normal;
+    font-weight: 400;
 }
 
 .text-number-about-info{
-    font-size: clamp(16px, 1.8vw, 32px);
-    font-weight: bold;
+    font-size: clamp(16px, 1.5vw, 32px);
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 700;
 }
 
 
@@ -201,10 +218,13 @@ html, body{
 
 .main-text-facts{
     margin: 0 0 clamp(3vh, 2vw, 50px) 0;
-    font-size: clamp(20px, 2.1vw, 43px);
+    font-size: clamp(20px, 2.5vw, 43px);
     color: #817773;
     line-height: 1.9;
     letter-spacing: 0.05em;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 500;
 }
 
 .div-fact-item{
@@ -225,13 +245,14 @@ html, body{
 }
 
 .div-left-facts-about .div-fact-item:not(:last-child) {
-     margin-bottom: clamp(30px, 5vh, 70px);
+     margin-bottom: clamp(30px, 9vh, 100px);
 }
 
 .fact-item-number{
-    font-family: 'Montagu Slab', serif;
+    font-family: 'Montagu Slab';
+    font-style: normal;
     font-weight: 500;
-    font-size: clamp(24px, 3.4vw, 64px);
+    font-size: clamp(24px, 3vw, 64px);
     line-height: 1.9;
     letter-spacing: 0.05em;
     color: #FFFFFF;
@@ -243,16 +264,35 @@ html, body{
     padding-left: clamp(20px, 3vh, 50px);
     width: 85%;
 }
-
-.fact-item-text{
-    font-weight: 300;
-    font-size: clamp(16px, 1.4vw, 24px);
+.fact-item-text {
+    font-family: "Playfair", serif; /* именно так */
+    font-style: normal;
+    font-weight: 300;               /* light */
+    font-variation-settings: "wdth" 112.5, "opsz" 5;
+    font-size: clamp(16px, 1.2vw, 24px);
     line-height: 1.3;
     letter-spacing: 0.1em;
     color: #817773;
-    text-transform: lowercase;
     display: inline-block;
     max-width: 40ch;
+}
+
+.btn-second-non-active{
+    width: clamp(130px, 10vw, 245px);
+    height: clamp(40px, 7vh, 56px);
+    font-size: clamp(18px, 2vw, 36px);
+    color: #FAF9F6;
+    background-color: #9E9794;
+    border: 1.5px solid #FAF9F6;
+    border-radius: 30px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-second-non-active:hover {
+    color: #FAF9F6;
+    background-color: #817773;
 }
 
 .div-right-fact-about{

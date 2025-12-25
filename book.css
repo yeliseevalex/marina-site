@@ -9,6 +9,10 @@ html, body{
 }
 
 /*SECTION 1*/
+.book-section-1{
+    margin-bottom: 10vh;
+}
+
 .div-main-book-section-1{
     display: flex;
     justify-content: center;
@@ -16,11 +20,11 @@ html, body{
 }
 
 .div-left-book{
-    width: 33.33%;
+    width: 30%;
 }
 
 .div-right-book{
-    width: 33.33%;
+    width: 30%;
 }
 
 .img-left-book{
@@ -32,7 +36,7 @@ html, body{
 
 
 .div-center-book {
-    width: 33.33%;
+    width: 60%;
     max-width: 600px;
     margin: 0 auto;
     padding: clamp(30px, 5vh, 50px) 20px;
@@ -47,14 +51,20 @@ html, body{
 }
 
 .main-text-book {
-    font-size: clamp(24px, 3vw, 40px);
+    font-size: clamp(24px, 2vw, 40px);
     color: #817773;
-    margin-bottom: 1rem;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.24em;
 }
 
 .sub-text-book {
-    font-size: clamp(16px, 1.5vw, 22px);
+    font-size: clamp(16px, 1.2vw, 22px);
     color: #817773;
+    font-family: 'Playfair';
+    font-style: italic;
+    font-weight: 300;
 }
 
 /* Форма */
@@ -62,15 +72,16 @@ html, body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: clamp(20px, 2vh, 30px);
+    gap: clamp(40px, 7vh, 77px);
+    align-items: center;
 }
 
 .form-item {
     display: flex;
     align-items: center;
     border: 1px solid #817773;
-    border-radius: 8px;
     overflow: hidden;
+    width: 90%;
 }
 
 .form-item-number {
@@ -79,13 +90,19 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 0.5vw;
 }
 
 .form-item-number span {
-    color: #fff;
+    font-family: 'Montagu Slab', serif;
     font-weight: 500;
-    font-size: clamp(20px, 2.5vw, 28px);
+    font-style: normal;
+    font-size: clamp(16px, 2vw, 36px);
+    line-height: 1.9;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
 }
+
 
 .form-item-input {
     flex: 1;
@@ -95,10 +112,25 @@ html, body{
 .form-item-input input {
     width: 100%;
     border: none;
+    border-bottom: 1px solid rgba(129, 119, 115, 0.7);
     outline: none;
-    font-size: clamp(16px, 1.5vw, 18px);
-    font-weight: 300;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
     color: #817773;
+    background: #FAF9F6;
+    font-size: clamp(20px, 1.5vw, 24px);
+    color: rgba(129, 119, 115, 0.7);
+    padding: 1px 0;
+}
+
+.form-item-input input::placeholder {
+    color: rgba(129, 119, 115, 0.7);
+    text-decoration: none; /* убираем подчёркивание у плейсхолдера */
+}
+
+.form-item-input input:focus {
+    border-bottom: 2px solid rgba(129, 119, 115, 1);
 }
 
 .btn-second-non-active{
@@ -121,6 +153,10 @@ html, body{
 
 
 /*SECTION 2*/
+.book-section-2{
+    margin-bottom: 10vh;
+}
+
 .div-main-faq-section-2 {
     display: flex;
     gap: 30px;
@@ -128,11 +164,11 @@ html, body{
 }
 
 .div-left-faq {
-    width: 45%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    transition: height 0.5s ease; /* плавная подстройка высоты */
+    transition: height 0.2s ease; /* плавная подстройка высоты */
     height: 50vh; /* изначальная высота 75% экрана */
 }
 
@@ -140,18 +176,22 @@ html, body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: height 0.5s ease;
     min-height: 50vh;
 }
 
 .div-right-faq {
-    width: 55%;
+    width: 60%;
+    margin-left: 5vw;
 }
 
 .main-text-faq {
-    font-size: clamp(24px, 2.5vw, 36px);
+    font-size: clamp(24px, 2vw, 36px);
     color: #817773;
     margin-bottom: 2rem;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.15em;
 }
 
 /* Аккордеон */
@@ -164,15 +204,20 @@ html, body{
 
 .faq-question {
     padding: 16px 20px;
-    background: #f5f5f5;
+    background: #817773;
     cursor: pointer;
-    font-weight: 500;
-    color: #817773;
-    transition: background 0.3s;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
+    color: #FAF9F6;
+    transition: background 0.5s;
+    line-height: 1.7;
+    letter-spacing: 0.2em;
+    font-size: clamp(22px, 1.5vw, 32px);
 }
 
 .faq-question:hover {
-    background: #e0e0e0;
+    background: #9E9794;
 }
 
 .faq-answer {
@@ -187,99 +232,18 @@ html, body{
 .faq-item.active .faq-answer {
     max-height: 300px;
     padding: 16px 20px;
-}
+    background: #FAF9F6;
+    color: #817773;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    line-height: 1.8;
+    width: 75ch;
 
-footer{
-     background-color: #817773;
-     padding: clamp(30px, 5vh, 55px) clamp(50px, 10vw, 120px);
-     color: #FAF9F6;
- }
-
- .div-split-footer{
-    display: flex;
-    justify-content: space-between;
- }
-
- .div-left-footer{
-     display: flex;
- }
-
- .footer-logo {
-    width: clamp(160px, 12vw, 280px);
-    height: auto;
-    fill: none;
-}
-
-.div-name-footer{
-    margin-left: clamp(10px, 2vw, 30px);
-}
-
-.text-name-footer{
-    margin: 0;
-    font-size: clamp(24px, 2.1vw, 40px);
-}
-
-.text-wedding-host-footer{
-    margin: 0;
-    font-size: clamp(18px, 1.2vw, 24px);
-    max-width: 30ch;
-}
-
- .div-bottom-footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: clamp(20px, 3vh, 35px);
- }
-
-.left-bottom-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.link-footer{
-    color: #FAF9F6;
-    font-size: clamp(16px, 1.8vw, 32px);
-}
-
-.left-bottom-footer .link-footer:not(:last-child) {
-     margin-right: clamp(50px, 7vw, 140px);
-}
-
-.center-bottom-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.year-created-footer{
-    font-size: clamp(16px, 1.6vw, 30px);
-}
-
-.right-bottom-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.div-social-media-footer .social-media:not(:last-child) {
-     margin-right: clamp(40px, 5vw, 100px);
-}
-
-.social-media {
-    display: inline-block;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.social-media:hover {
-    transform: scale(1.1);
 }
 
 
-.phone-footer, .mail-footer{
-    margin: 0;
-    font-size: clamp(16px, 1.8vw, 32px);
-}
 
 .header{
     background: #817773;

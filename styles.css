@@ -30,8 +30,8 @@ section{
  }
 
 .btn-main-non-active{
-    width: clamp(200px, 16vw, 300px);
-    height: clamp(50px, 3.8vw, 70px);
+    width: clamp(200px, 13vw, 300px);
+    height: clamp(50px, 3vw, 70px);
     color: #FAF9F6;
     background-color: #9E9794;
     border: 1.5px solid #FAF9F6;
@@ -65,83 +65,7 @@ section{
     background-color: #817773;
 }
 
-/* FOOTER */
-footer{
-     background-color: #817773;
-     padding: clamp(30px, 5vh, 55px) clamp(50px, 10vw, 120px);
-     color: #FAF9F6;
- }
-
- .div-split-footer{
-    display: flex;
-    justify-content: space-between;
- }
-
- .div-left-footer{
-     display: flex;
- }
-
- .footer-logo {
-    width: clamp(160px, 12vw, 280px);
-    height: auto;
-    fill: none;
-}
-
-.div-name-footer{
-    margin-left: clamp(10px, 2vw, 30px);
-}
-
-.text-name-footer{
-    margin: 0;
-    font-size: clamp(24px, 2.1vw, 40px);
-}
-
-.text-wedding-host-footer{
-    margin: 0;
-    font-size: clamp(18px, 1.2vw, 24px);
-    max-width: 30ch;
-}
-
- .div-bottom-footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: clamp(20px, 3vh, 35px);
- }
-
-.left-bottom-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.link-footer{
-    color: #FAF9F6;
-    font-size: clamp(16px, 1.8vw, 32px);
-}
-
-.left-bottom-footer .link-footer:not(:last-child) {
-     margin-right: clamp(50px, 7vw, 140px);
-}
-
-.center-bottom-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.year-created-footer{
-    font-size: clamp(16px, 1.6vw, 30px);
-}
-
-.right-bottom-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.div-social-media-footer .social-media:not(:last-child) {
-     margin-right: clamp(40px, 5vw, 100px);
-}
+/* SECTION 1 */
 
 .social-media {
     display: inline-block;
@@ -152,18 +76,6 @@ footer{
     transform: scale(1.1);
 }
 
-
-.phone-footer, .mail-footer{
-    margin: 0;
-    font-size: clamp(16px, 1.8vw, 32px);
-}
-
-
-
-
-
-
-/* SECTION 1 */
 .section-1{
     height: 100vh;
 }
@@ -185,7 +97,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    margin: 8.5vh 0;
+    margin: 10vh 0;
 }
 
 .logo-header{
@@ -236,7 +148,7 @@ footer{
 }
 
 .social-media{
-    width: clamp(48px, 4.5vw, 75px);
+    width: clamp(48px, 4vw, 75px);
     height: auto;
     fill: none;
 }
@@ -289,12 +201,16 @@ footer{
     font-size: clamp(28px, 2vw, 40px);
     margin: 0;
     margin-bottom: 2vh;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
+    color: #817773;
 }
 
 .p-small-split-text{
     margin: 0;
     max-width: 50ch;
-    font-size: clamp(16px, 1.4vw, 24px);
+    font-size: clamp(16px, 1.2vw, 24px);
     line-height: 1.95;
     letter-spacing: 0.1em;
 }
@@ -330,13 +246,15 @@ footer{
     color: #FAF9F6;
     font-size: clamp(28px, 2.5vw, 45px);
     font-weight: 300;
-    letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
 }
 
 .div-split-vertical {
@@ -403,29 +321,59 @@ footer{
     color: #FAF9F6;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 5vw;
+    padding: 10vh;
 }
 
 .main-text-services{
-    font-size: clamp(28px, 2.5vw, 45px);
+    font-size: clamp(28px, 2.8vw, 45px);
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 7vh;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 500;
 }
 
 .text-services{
-    font-size: clamp(16px, 1.4vw, 24px);
-    margin-bottom: 5vh;
-    max-width: 50ch;
+    font-size: clamp(16px, 1.2vw, 24px);
+    margin-bottom: 7vh;
+    max-width: 55ch;
     letter-spacing: 0.12em;
     line-height: 1.9;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text-services-underline {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.text-services-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;          /* самая высокая точка, ближе уже не будет */
+    height: 1px;        /* толщина линии */
+    background: currentColor;
 }
 
 .section-4 .btn-main-non-active{
     width: clamp(160px, 13vw, 245px);
     height: clamp(40px, 5.5vh, 56px);
+    font-size: clamp(18px, 1.6vw, 36px);
+}
+
+.t-review-underline{
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 700;
 }
 
 .section-4 .t-underline-w {
@@ -616,7 +564,7 @@ footer{
 /* Текст на оверлее */
 .review-text {
     color: #FAF9F6;
-    font-size: clamp(16px, 2vw, 18px);
+    font-size: clamp(8px, 0.9vw, 18px);
     letter-spacing: 0.15em;
     line-height: 1.85;
     font-style: italic;
@@ -685,11 +633,14 @@ footer{
 .main-text-review {
     text-transform: uppercase;
     font-size: clamp(28px, 2vw, 40px);
-    line-height: 1.4;
+    line-height: 1.2;
     letter-spacing: 0.15em;
     color: #817773;
     font-weight: 400;
     max-width: 25ch;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
 }
 
 .section-5 .t-underline-b {
@@ -749,11 +700,16 @@ footer{
 
 .span-step{
     font-size: clamp(28px, 2vw, 40px);
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
 }
 
 .span-num-step{
     font-size: clamp(35px, 2.5vw, 50px);
-    text-weight: 700;
+    font-family: 'Montagu Slab';
+    font-style: normal;
+    font-weight: 600;
 }
 
 .div-3steps .span-step:not(:last-child) {
@@ -769,9 +725,12 @@ footer{
 
 .right-text-steps{
     color: #817773;
-    font-size: clamp(24px, 2vw, 36px);
+    font-size: clamp(24px, 1.8vw, 36px);
     line-height: 1.9;
     max-width: 40ch;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
 }
 
 .section-7 .btn-second-non-active{
