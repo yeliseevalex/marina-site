@@ -1,9 +1,11 @@
 document.addEventListener("headerLoaded", () => {
     const links = document.querySelectorAll(".div-links-header .link-header");
-    const currentPath = window.location.pathname.split("/").pop();
+    const currentFile = window.location.pathname.split("/").pop(); // services.html
 
     links.forEach(link => {
-        if (link.getAttribute("href") === currentPath) {
+        const hrefFile = link.getAttribute("href").split("/").pop(); // services.html
+
+        if (hrefFile === currentFile) {
             link.classList.add("active-link");
         }
     });

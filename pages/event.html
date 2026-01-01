@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Page</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/events.css">
+    <script src="../js/components.js" defer></script>
+    <script src="../js/eventsData.js" defer></script>
+    <script src="../js/eventLoader.js" defer></script>
+    <script src="../js/popupData.js" defer></script>
+    <script src="../js/popupLoader.js"></script>
+</head>
+<body>
+<!--HEADER-->
+<my-header></my-header>
+
+<!-- SECTION 1 -->
+<section class="event-section-1">
+    <div class="div-split2">
+        <div class="div-left">
+            <div class="div-main-event-img">
+                <img id="img1" class="main-event-img" src="" alt="">
+            </div>
+        </div>
+        <div class="div-right">
+            <div class="div-main-event-text">
+                <h1 id="title1" class="main-event-text"></h1>
+                <span id="text1" class="main-event-subtext"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="event-section-2">
+    <div class="div-slider">
+        <div class="div-slider-content" id="slider"></div>
+    </div>
+</section>
+
+<section class="event-section-3" style="display:none;">
+    <div class="div-split2">
+        <div class="div-left">
+            <div class="div-main-event-img">
+                <img id="img2" class="main-event-img" src="" alt="">
+            </div>
+        </div>
+        <div class="div-right">
+            <div class="div-main-event-text">
+                <h1 id="title2" class="main-event-text"></h1>
+                <span id="text2" class="main-event-subtext"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="event-section-4">
+    <div class="div-container-wed-section4">
+        <div class="div-col-in-container">
+            <div class="div-text-in-container">
+                <span class="text-in-container">
+                    Готовы обсуждать? <br> Жду Вас на Консультации
+                </span>
+            </div>
+            <a href="book.html"><button class="btn-second-non-active">Анкета</button></a>
+        </div>
+
+
+            <div class="div-col-in-container">
+                <div class="div-text-in-container">
+                    <span class="text-in-container">
+                        Больше историй и отзывов <br> о том, как я веду свадьбы
+                    </span>
+                </div>
+                <button class="btn-second-non-active" id="btn-open-popup">Портфолио</button>
+            </div>
+
+            <div class="div-col-in-container">
+                <div class="div-text-in-container">
+                    <span class="text-in-container">
+                        Другое мероприятие?.. <br> Что я могу предложить еще
+                    </span>
+                </div>
+                <a href="services.html"><button class="btn-second-non-active">Услуги</button></a>
+            </div>
+
+    </div>
+</section>
+
+<div class="popup" id="portfolioPopup">
+    <div class="popup-content slider-wrapper">
+        <span class="popup-close">&times;</span>
+
+        <button class="slider-arrow left" id="slidePrev">&#10094;</button>
+        <button class="slider-arrow right" id="slideNext">&#10095;</button>
+
+        <div class="slides-container" id="popupSlides"></div>
+    </div>
+</div>
+
+<!--FOOTER-->
+<my-footer></my-footer>
+
+<!--POPUP-->
+<script src="../js/popup.js"></script>
+
+
+</body>
+</html>
