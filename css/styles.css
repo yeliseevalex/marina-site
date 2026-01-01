@@ -65,6 +65,33 @@ section{
     background-color: #817773;
 }
 
+/* HEADER */
+/* Скрыт по умолчанию */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #817773;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5vw; /* вместо 3vh */
+    z-index: 999;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    box-sizing: border-box; /* чтобы padding не ломал размеры */
+    min-height: 80px; /* фиксированная минимальная высота */
+}
+
+/* Когда нужно показать */
+.header.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 /* SECTION 1 */
 
 .social-media {
@@ -100,7 +127,7 @@ section{
     margin: 10vh 0;
 }
 
-.logo-header{
+.logo-header-section1{
     display: flex;
     align-items: start;
 }
@@ -140,7 +167,7 @@ section{
     margin-bottom: 6vh;
 }
 
-.div-social-media{
+.div-social-media-section1{
     margin-top: 10vh;
     display: flex;
     justify-content: center;
@@ -153,7 +180,7 @@ section{
     fill: none;
 }
 
-.div-social-media .social-media:not(:last-child) {
+.div-social-media-section1 .social-media:not(:last-child) {
      margin-right: 5vw;
 }
 

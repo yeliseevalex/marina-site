@@ -14,6 +14,10 @@ section{
 }
 
 /*SECTION 1*/
+.wedding-section-1{
+     margin-top: 100px;
+}
+
 .div-split2{
     display: flex;
 }
@@ -427,74 +431,3 @@ letter-spacing: 0.15em;
     color: #FAF9F6;
     cursor: pointer;
 }
-
-
-.header{
-    background: #817773;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3vh 5vw;
-}
-
-.div-col-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-header {
-    width: clamp(85px, 7.5vw, 150px);
-    height: auto;
-    fill: none;
-}
-
-.header-name{
-    color: #FAF9F6;
-    font-size: clamp(24px, 2vw, 36px);
-    margin-left: 1.8vw;
-    font-weight: 700;
-}
-
-.div-links-header{
-
-}
-
-.header .div-links-header .link-header:not(:last-child) {
-     margin-right: 3.5vw;
-}
-
-.link-header{
-    text-decoration: none;
-    color: #FAF9F6;
-    font-size: clamp(16px, 1.8vw, 32px);
-}
-
-
-.header .div-social-media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header .social-media{
-    width: clamp(35px, 3vw, 55px);
-    height: auto;
-    fill: none;
-}
-
-.header .div-social-media .social-media:not(:last-child) {
-     margin-right: 4vw;
-}
-
-.header .social-media {
-    display: inline-block;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.header .social-media:hover {
-    transform: scale(1.1);
-}
-
-
-

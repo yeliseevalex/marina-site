@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weddings</title>
+    <link rel="stylesheet" type="text/css" href="../css/weddings.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="../js/components.js" defer></script>
+</head>
+<body>
+
+<!--HEADER-->
+<my-header></my-header>
+
+<!--WEDDING PAGE SECTION 1-->
+<section class="wedding-section-1">
+    <div class="div-split2">
+        <div class="div-left">
+            <div class="div-main-wedding-img">
+                <img src="../images/weddings/main-section1.png" alt="wedding host" class="main-wedding-img">
+            </div>
+        </div>
+
+        <div class="div-right">
+            <div class="div-main-wedding-text">
+                <h1 class="main-wedding-text">ЦЕРЕМОНИЯ</h1>
+                <span class="main-wedding-subtext">
+                    Подготовка к церемонии — это гарантия того, что ваш <br>
+                    день станет незабываемым в самом лучшем смысле <br>
+                    этого слова. Первое, о чём я спрашиваю пару на <br>
+                    созвоне:
+                    <br><span class="wedding-subtext-italic">«Чего хотите именно вы?»</span>
+                    <br>Отталкиваясь от этого, мы разрабатываем концепцию <br>
+                    того, каким будет Ваш счастливый день
+                    <br>Далее каждый отдельно заполняет анкету и отправляет <br>
+                    мне. После этого я создаю индивидуальный текст <br>
+                    церемонии, ведь не бывает двух одинаковых <span class="wedding-subtext-bold">love story</span>. <br>
+                    Уже на площадке я рассказываю и показываю, кто где <br>
+                    стоит, откуда выходит..Вам нужно только наслаждаться <br>
+                    Все это  для того, чтобы в день свадьбы всё прошло <br>
+                    легко, красиво и спокойно
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--WEDDING PAGE SECTION 2-->
+<section class="wedding-section-2">
+    <div class="div-slider">
+        <div class="div-slider-content">
+            <img src="../images/weddings/slider1-section2.png" alt="wedding event slider" class="slider-img">
+            <img src="../images/weddings/slider2-section2.png" alt="wedding event slider" class="slider-img">
+            <img src="../images/weddings/slider3-section2.png" alt="wedding event slider" class="slider-img">
+            <img src="../images/weddings/slider4-section2.png" alt="wedding event slider" class="slider-img">
+        </div>
+    </div>
+</section>
+
+<!--WEDDING PAGE SECTION 3-->
+<section class="wedding-section-3">
+    <div class="div-split2">
+        <div class="div-left">
+            <div class="div-main-wedding-img">
+                <img src="../images/weddings/main-section3.png" alt="wedding host" class="main-wedding-img">
+            </div>
+        </div>
+
+        <div class="div-right">
+            <div class="div-main-wedding-text">
+                <h1 class="main-wedding-text">СВАДЕБНЫЙ БАНКЕТ</h1>
+                <span class="main-wedding-subtext">
+                    Благодаря работе в Грузии я не только узнала свадебные <br>
+                    традиции и особенности культур различных стран, но и <br>
+                    по-настоящему прочувствовала, как любовь объединяет <br>
+                    людей, несмотря на язык, менталитет и привычки.<br>
+                    Чаще всего в сезоне преобладают именно <br>
+                    <span class="wedding-subtext-bold">интернациональные свадьбы.</span><br>
+                    Атмосфера и адаптивный тайминг - это мои главные <br>
+                    ориентиры. Я всегда чувствую, когда стоит дать гостям <br>
+                    время насладиться моментом, а когда добавить <br>
+                    динамики и энергии.<br>
+                    Поэтому тайминг я адаптирую под настроение, чтобы <br>
+                    праздник проходил естественно и гармонично. <br>
+                    Ведь идеальная свадьба — это та, где комфортно <br>
+                    абсолютно всем
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--WEDDING PAGE SECTION 4-->
+<section class="wedding-section-4">
+    <div class="div-container-wed-section4">
+        <div class="div-col-in-container">
+            <div class="div-text-in-container">
+                <span class="text-in-container">
+                    Готовы обсуждать? <br> Жду Вас на Консультации
+                </span>
+            </div>
+            <a href="book.html"><button class="btn-second-non-active">Анкета</button></a>
+        </div>
+
+
+            <div class="div-col-in-container">
+                <div class="div-text-in-container">
+                    <span class="text-in-container">
+                        Больше историй и отзывов <br> о том, как я веду свадьбы
+                    </span>
+                </div>
+                <button class="btn-second-non-active" id="btn-open-popup">Портфолио</button>
+            </div>
+
+            <div class="div-col-in-container">
+                <div class="div-text-in-container">
+                    <span class="text-in-container">
+                        Другое мероприятие?.. <br> Что я могу предложить еще
+                    </span>
+                </div>
+                <a href="services.html"><button class="btn-second-non-active">Услуги</button></a>
+            </div>
+
+    </div>
+</section>
+
+<!--POP-UP-->
+<div class="popup" id="portfolioPopup">
+    <div class="popup-content slider-wrapper">
+        <span class="popup-close">&times;</span>
+
+        <!-- стрелки навигации -->
+        <button class="slider-arrow left" id="slidePrev">&#10094;</button>
+        <button class="slider-arrow right" id="slideNext">&#10095;</button>
+
+        <div class="slides-container">
+            <!-- СЛАЙД 1 -->
+            <div class="slide active">
+                <div class="slide-left">
+                    <img src="../images/weddings/pop-up/main1-popup.png" alt="">
+                    <div class="review-content bottom-start">
+                        <span class="review-open-text">
+                            Марина, спасибо большое ещё раз и тысячу раз!!!
+                            Спасибо за то, что умеешь слушать и слышать, все, что заполняли в анкете было использовано и обыграно так красиво!❤️ все наши пресвадебные встречи так же проходили идеально!
+                            Все прошло идеально, каждый гость несколько раз сказал о том, какая прекрасная ведущая и то, как им все понравилось, все интерактивы, тепло,  которое ты дала
+                        </span>
+                        <span class="read-more-text-review">ЧИТАТЬ ДАЛЬШЕ</span>
+                    </div>
+
+                    <div class="review-overlay bottom-overlay">
+                        <svg class="review-arrow" viewBox="0 0 25 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.638 -0.000118256L7.62939e-06 22.6408L22.638 45.2759L24.6758 43.2381L4.07854 22.6436L24.6787 2.04059L22.638 -0.000118256Z" fill="#FAF9F6"/>
+                        </svg>
+                        <span class="review-text">ОТЗЫВ</span>
+                    </div>
+                </div>
+
+                <div class="slide-right">
+                    <div class="slide-text-wrapper">
+                        <span class="slide-text">
+                           20 февраля я получила сообщение, от которого по телу побежали мурашки, а волнение, радость и огромная ответственность сплелись воедино Не каждый день пары бронируют дату, даже не спросив стоимость 😄
+                            (Забегая вперёд — они думали, что моя работа стоит в два раза дороже 🙈)
+                        </span>
+                        <span class="read-more-text">ЧИТАТЬ ДАЛЬШЕ</span>
+                    </div>
+<!--                        <button class="read-more-btn">ЧИТАТЬ ДАЛЬШЕ</button>-->
+
+                    <div class="slide-thumbs">
+                        <img src="../images/weddings/pop-up/first1-popup.png" alt="">
+                        <img src="../images/weddings/pop-up/second1-popup.png" alt="">
+                        <img src="../images/weddings/pop-up/third1-popup.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- СЛАЙД 2 -->
+            <div class="slide">
+                <div class="slide-left">
+                    <img src="../images/weddings/pop-up/main1-popup.png" alt="">
+                    <div class="review-content bottom-start">
+                        <span class="review-open-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, iusto, voluptas! Cum exercitationem harum officiis, perspiciatis quae quisquam veritatis voluptas. Distinctio earum eveniet id ipsum odio pariatur perspiciatis praesentium qui quos, voluptas? Alias asperiores at corporis ex exercitationem explicabo labore numquam omnis pariatur perspiciatis quibusdam repellendus repudiandae, tempora, vel veniam vero vitae voluptas! Architecto aut dignissimos ea fuga laboriosam magni praesentium quas quia quo sint. Accusamus accusantium adipisci alias aliquam amet architecto, atque blanditiis commodi consequatur corporis culpa distinctio doloribus dolorum error eveniet expedita fugit incidunt modi natus nulla perspiciatis, praesentium quae quam qui, quidem quos tenetur unde ut veritatis?
+                        </span>
+                        <span class="read-more-text-review">ЧИТАТЬ ДАЛЬШЕ</span>
+                    </div>
+
+                    <div class="review-overlay bottom-overlay">
+                        <svg class="review-arrow" viewBox="0 0 25 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.638 -0.000118256L7.62939e-06 22.6408L22.638 45.2759L24.6758 43.2381L4.07854 22.6436L24.6787 2.04059L22.638 -0.000118256Z" fill="#FAF9F6"/>
+                        </svg>
+                        <span class="review-text">ОТЗЫВ</span>
+                    </div>
+                </div>
+
+                <div class="slide-right">
+                    <div class="slide-text-wrapper">
+                        <span class="slide-text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto atque cupiditate dolores eum, eveniet fugit illo impedit iusto libero officia omnis praesentium quis veritatis vero. Ab adipisci amet at consectetur, dicta esse ex, ipsa natus nesciunt sint, suscipit ut vitae. Accusamus cumque eum non provident, reprehenderit suscipit. Aliquam atque corporis delectus fugit ipsum minus officiis praesentium saepe sunt velit. Ad aperiam architecto aut consequuntur cumque delectus doloremque doloribus eaque ex inventore laboriosam libero maxime nobis, numquam officia reprehenderit saepe sapiente sequi tempora, voluptate. Et magnam, nesciunt. Asperiores dicta dolore dolores esse eveniet harum hic illum nihil qui voluptatem. Quod.
+                        </span>
+                        <span class="read-more-text">ЧИТАТЬ ДАЛЬШЕ</span>
+                    </div>
+                    <div class="slide-thumbs">
+                        <img src="../images/weddings/pop-up/first1-popup.png" alt="">
+                        <img src="../images/weddings/pop-up/second1-popup.png" alt="">
+                        <img src="../images/weddings/pop-up/third1-popup.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Добавляй еще слайды по необходимости -->
+        </div>
+    </div>
+</div>
+
+<!--FOOTER-->
+<my-footer></my-footer>
+
+<!--SLIDER-->
+<script src="../js/slider.js"></script>
+<!--POPUP-->
+<script src="../js/popup.js"></script>
+<!--SLIDER POPUP-->
+<script src="../js/sliderPopup.js"></script>
+<!--READ MORE-->
+<script src="../js/readMore.js"></script>
+<!--REVIEW POPUP-->
+<script src="../js/reviewPopup.js"></script>
+
+</body>
+</html>
