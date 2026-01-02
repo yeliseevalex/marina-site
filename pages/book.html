@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../css/book.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <script src="../js/components.js" defer></script>
+    <script src="../js/translate.js" defer></script>
+    <script src="../js/main.js" defer></script>
 </head>
 <body>
 
@@ -22,11 +24,8 @@
 
          <div class="div-center-book">
             <div class="div-text-center-book">
-                <h2 class="main-text-book">КОНСУЛЬТАЦИЯ</h2>
-                <span class="sub-text-book">
-                    Вы всегда можете написать мне <br>
-                    в любом удобном для Вас мессенджере
-                </span>
+                <h2 class="main-text-book" data-i18n="consultation_title"></h2>
+                <span class="sub-text-book" data-i18n="consultation_text"></span>
             </div>
 
             <form class="div-booking-form">
@@ -35,7 +34,7 @@
                         <span>1</span>
                     </div>
                     <div class="form-item-input">
-                        <input type="text" placeholder="Введите Ваше имя" required>
+                        <input type="text" id="nameInput" placeholder="" required>
                     </div>
                 </div>
 
@@ -44,7 +43,7 @@
                         <span>2</span>
                     </div>
                     <div class="form-item-input">
-                        <input type="tel" placeholder="Укажите Ваш telegram/whatsapp" required>
+                        <input type="tel" id="contactInput" placeholder="" required>
                     </div>
                 </div>
 
@@ -53,11 +52,11 @@
                         <span>3</span>
                     </div>
                     <div class="form-item-input">
-                        <input type="text" placeholder="Выберете мероприятие" required>
+                        <input type="text" id="eventInput" placeholder="" required>
                     </div>
                 </div>
 
-                <button type="submit" class="btn-second-non-active">Отправить</button>
+                <button type="submit" id="formButton" class="btn-second-non-active"></button>
             </form>
         </div>
 
@@ -77,35 +76,26 @@
         </div>
 
         <div class="div-right-faq">
-            <h2 class="main-text-faq">КАКИЕ ВОПРОСЫ У ВАС <br> МОГУТ ВОЗНИКНУТЬ?</h2>
+            <h2 class="main-text-faq" data-i18n="faq_title"></h2>
 
             <div class="faq-item">
-                <div class="faq-question">Длительность свадьбы</div>
-                <div class="faq-answer">
-                    Всё зависит от формата: обычно церемония занимает около часа, а банкет — примерно пять.
-                    Но я не придерживаюсь жёстких рамок. Я всегда адаптирую тайминг под настроение, чтобы праздник проходил естественно и гармонично.
-                </div>
+                <div class="faq-question" data-i18n="faq_1_question"></div>
+                <div class="faq-answer" data-i18n="faq_1_answer"></div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">От чего зависит цена?</div>
-                <div class="faq-answer">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, atque earum error iusto labore molestiae, non nulla numquam perferendis porro quae qui quisquam tempore ut! Accusamus, earum fugit harum libero optio provident quas repellat temporibus vitae. Culpa doloremque earum explicabo ipsum porro quasi reprehenderit. Accusamus animi autem corporis cum ea ipsa iste libero placeat quasi repellat! Praesentium, quae, tenetur?
-                </div>
+                <div class="faq-question" data-i18n="faq_2_question"></div>
+                <div class="faq-answer" data-i18n="faq_2_answer"></div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Какие интерактивы?</div>
-                <div class="faq-answer">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis earum est impedit ipsum iste minima, minus modi neque nisi quaerat ratione repudiandae rerum, sit soluta temporibus tenetur velit voluptas, voluptate voluptates. A blanditiis cupiditate deleniti, facilis fugit molestiae mollitia necessitatibus numquam obcaecati perferendis quo, quos sit, tenetur voluptatibus voluptatum.
-                </div>
+                <div class="faq-question" data-i18n="faq_3_question"></div>
+                <div class="faq-answer" data-i18n="faq_3_answer"></div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Поможете в организации?</div>
-                <div class="faq-answer">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at eos explicabo facere magnam natus nulla similique voluptate? At corporis cum cupiditate doloremque dolorum ducimus fugiat perferendis perspiciatis quibusdam totam.
-                </div>
+                <div class="faq-question" data-i18n="faq_4_question"></div>
+                <div class="faq-answer" data-i18n="faq_4_answer"></div>
             </div>
 
         </div>

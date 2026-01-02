@@ -76,7 +76,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5vw; /* вместо 3vh */
+    padding: 1rem 5vw; /* вместо 3vh */
     z-index: 999;
     transform: translateY(-100%);
     opacity: 0;
@@ -544,15 +544,6 @@ section{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-
-.left-overlay:hover .review-arrow {
-    animation-name: arrow-left;
-}
-
-/* Правая стрелка — двигается влево */
-.right-overlay:hover .review-arrow {
-    animation-name: arrow-right;
 }
 
 /* Плавное движение вправо */

@@ -103,6 +103,17 @@
     overflow: hidden;
 }
 
+.slide-title{
+    margin: 0;
+    margin-bottom: 1vh;
+    text-transform: uppercase;
+    font-size: clamp(24px, 1.8vw, 32px);
+    color: #817773;
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 700;
+}
+
 .popup .slide-text {
     display: inline;
     font-size: clamp(16px, 1.4vw, 24px);

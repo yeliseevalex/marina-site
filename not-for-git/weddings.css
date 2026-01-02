@@ -14,8 +14,8 @@ section{
 }
 
 /*SECTION 1*/
-.event-section-1{
-     margin-top: 80px;
+.wedding-section-1{
+     margin-top: 100px;
 }
 
 .div-split2{
@@ -26,7 +26,7 @@ section{
     width: 40%;
 }
 
-.main-event-img{
+.main-wedding-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -37,7 +37,7 @@ section{
     background-color: #FAF9F6;
 }
 
-.div-main-event-text{
+.div-main-wedding-text{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ section{
     letter-spacing: 0.1em;
 }
 
-.main-event-text{
+.main-wedding-text{
     margin: 0;
     margin-bottom: 3vh;
     font-size: clamp(28px, 2.2vw, 45px);
@@ -56,7 +56,7 @@ section{
     font-weight: normal;
 }
 
-.main-event-subtext{
+.main-wedding-subtext{
     font-size: clamp(16px, 1.3vw, 24px);
     letter-spacing: 0.15em;
     line-height: 1.8;
@@ -68,13 +68,13 @@ section{
     font-weight: 400;
 }
 
-.event-subtext-italic{
+.wedding-subtext-italic{
     font-family: 'Playfair';
     font-style: italic;
     font-weight: 400;
 }
 
-.event-subtext-bold{
+.wedding-subtext-bold{
     font-family: 'Playfair';
     font-style: normal;
     font-weight: 900;
@@ -104,13 +104,13 @@ section{
 }
 
 /* SECTION 3 */
-.event-section-3 .div-split2{
+.wedding-section-3 .div-split2{
     flex-direction: row-reverse;
 }
 
 /* SECTION 4 */
 
-.event-section-4{
+.wedding-section-4{
     margin-bottom: 10vh;
 }
 
@@ -185,6 +185,7 @@ section{
 .popup-content {
     width: 90%;
     height: 90%;
+    background: #fff;
     border-radius: 16px;
     position: relative;
     overflow: hidden;
@@ -215,7 +216,6 @@ section{
     display: flex;
     position: relative;
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
 }
 
 .slide {
@@ -247,7 +247,6 @@ section{
 
 /* LEFT PHOTO */
 .slide-left {
-    width: 30%;
     overflow: hidden;
 }
 
@@ -266,17 +265,6 @@ section{
     justify-content: space-between;
     max-height: 100%; /* чтобы текст не выходил за границы */
     overflow: hidden;
-}
-
-.slide-title{
-    margin: 0;
-    margin-bottom: 1vh;
-    text-transform: uppercase;
-    font-size: clamp(24px, 1.8vw, 32px);
-    color: #817773;
-    font-family: 'Playfair';
-    font-style: normal;
-    font-weight: 700;
 }
 
 .slide-text {
@@ -367,7 +355,7 @@ letter-spacing: 0.15em;
     width: 100%;
     height: 100%;
     background: #817773;
-    padding: 2.5vw;
+    padding: 4vw;
     box-sizing: border-box;
     transition: bottom 0.5s ease;
     z-index: 1;
@@ -427,7 +415,7 @@ letter-spacing: 0.15em;
     font-family: 'Playfair';
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(12px, 1.2vw, 20px);
+    clamp(12px, 1.5vw, 20px);
     line-height: 1.8;
     letter-spacing: 0.1em;
     color: #FAF9F6;

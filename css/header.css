@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5vw; /* вместо 3vh */
+    padding: 1rem 5vw; /* вместо 3vh */
     z-index: 999;
     box-sizing: border-box; /* чтобы padding не ломал размеры */
     min-height: 80px; /* фиксированная минимальная высота */
@@ -20,14 +20,14 @@
 }
 
 .logo-header {
-    width: clamp(85px, 7.5vw, 150px);
+    width: clamp(60px, 6vw, 150px);
     height: auto;
     fill: none;
 }
 
 .header-name{
     color: #FAF9F6;
-    font-size: clamp(24px, 2vw, 36px);
+    font-size: clamp(24px, 1.6vw, 36px);
     margin-left: 1.8vw;
     font-weight: 700;
 }
@@ -86,7 +86,7 @@
 }
 
 .header .social-media{
-    width: clamp(35px, 3vw, 55px);
+    width: clamp(25px, 2.5vw, 55px);
     height: auto;
     fill: none;
 }

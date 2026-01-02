@@ -10,7 +10,7 @@ html, body{
 
 /*SECTION 1*/
 .about-section-1{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .div-split2{
@@ -43,7 +43,7 @@ html, body{
 }
 
 .main-about-text{
-    margin: clamp(5.7vh, 3vw, 90px) 0 clamp(1.9vh, 1vw, 30px) 0;
+    margin: clamp(5.7vh, 3vw, 90px) 0 0 0;
     font-size: clamp(28px, 2.5vw, 45px);
     color: #817773;
     font-weight: normal;
@@ -59,7 +59,7 @@ html, body{
     letter-spacing: 0.1em;
     line-height: 1.94;
     color: #817773;
-    max-width: 60ch;
+    max-width: 62ch;
     font-family: 'Playfair';
     font-style: normal;
     font-weight: 400;
@@ -86,7 +86,7 @@ html, body{
     font-size: clamp(24px, 1.8vw, 36px);
     line-height: 1.6;
     font-style: italic;
-    max-width: 40ch;
+    max-width: 42ch;
     font-family: "Playfair", serif;
     font-style: italic;
     font-weight: 400;
@@ -211,7 +211,7 @@ html, body{
     letter-spacing: 0.1em;
     color: #817773;
     display: inline-block;
-    max-width: 40ch;
+    max-width: 45ch;
 }
 
 .btn-second-non-active{

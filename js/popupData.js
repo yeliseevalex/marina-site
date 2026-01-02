@@ -1,6 +1,6 @@
 const popupData = {
     wedding: [
-        {
+        {   title: "Свадьба: Александр и Юлия",
             main: "../images/weddings/pop-up/main1-popup.png",
             thumbs: [
                 "../images/weddings/pop-up/first1-popup.png",
@@ -30,6 +30,7 @@ const popupData = {
                     P.S ребята думали, что бабушка устанет и уйдет отдыхать в номер, но Наталья не только не ушла с банкета, а еще и заряжала всех своим позитивом`
         },
         {
+            title: "Свадьба: Алексей и Дина",
             main: "../images/weddings/pop-up/main2-popup.jpg",
             thumbs: [
                 "../images/weddings/pop-up/first2-popup.jpg",
@@ -50,7 +51,9 @@ const popupData = {
     ],
 
     corporate: [
-        {   main: "",
+        {
+            title: "Корпоратив: Мануфактура",
+            main: "",
             thumbs: [
 
             ],
@@ -64,6 +67,7 @@ const popupData = {
 
     ceremony: [
         {
+            title: "Церемония обновления: Хызыр и Лера",
             main: "../images/ceremony/pop-up/main1-popup.JPG",
             thumbs: [
                 "../images/ceremony/pop-up/first1-popup.JPG",
@@ -86,10 +90,12 @@ const popupData = {
                     Когда они сказали друг другу «ДА», в воздухе витала неподдельная радость и любовь.
                     Иногда не нужна официальная свадьба, чтобы прожить сказку. Достаточно решиться подарить себе этот день и почувствовать настоящую магию вместе.`
         },
+
     ],
 
     genderparty: [
         {
+            title: "Гендер-пати в Батуми: Ирины и Тома",
             main: "../images/genderparty/pop-up/main1-popup.JPG",
             thumbs: [
                 "../images/genderparty/pop-up/first1-popup.png",
@@ -106,6 +112,7 @@ const popupData = {
 
     graduation: [
         {
+            title: "Випускний",
             main: "../images/graduation/pop-up/main1-popup.JPG",
             thumbs: [
                 "../images/graduation/pop-up/first1-popup.JPG",

@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <div class="slide-right">
                 <div class="slide-text-wrapper">
+                    <h2 class="slide-title">${item.title || ""}</h2>
                     <span class="slide-text">${item.text}</span>
                     <span class="read-more-text">ЧИТАТЬ ДАЛЬШЕ</span>
                 </div>
@@ -59,6 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".slide");
     const prevBtn = document.getElementById("slidePrev");
     const nextBtn = document.getElementById("slideNext");
+    // Если всего один слайд — скрываем стрелки
+    if (slides.length <= 1) {
+        prevBtn.style.display = "none";
+        nextBtn.style.display = "none";
+    }
     let currentIndex = 0;
 
     // Показываем первый слайд
@@ -100,7 +106,7 @@ function initReadMore() {
         const readMore = wrapper.querySelector('.read-more-text');
 
         const fullText = textEl.textContent;
-        const visibleChars = 450;
+        const visibleChars = 400;
 
         if (fullText.length <= visibleChars) {
             readMore.style.display = 'none';

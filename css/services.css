@@ -11,7 +11,7 @@ html, body{
 /*SECTION 1*/
 .services-section1{
     margin-bottom: 10vh;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .div-services-cards{
@@ -56,7 +56,7 @@ html, body{
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
-    width: 37vh;
+    width: 42vh;
     color: #FAF9F6;
     transition: transform 0.5s ease, color 0.5s ease;
 }

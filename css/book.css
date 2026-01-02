@@ -10,7 +10,7 @@ html, body{
 
 /*SECTION 1*/
 .book-section-1{
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 10vh;
 }
 
@@ -193,6 +193,29 @@ html, body{
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.15em;
+}
+
+.link-srev-faq{
+    font-family: 'Playfair';
+    font-style: normal;
+    color: #817773;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.link-srev-faq:hover{
+    font-weight: 700;
+}
+
+.link-srev-faq::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;          /* самая высокая точка, ближе уже не будет */
+    height: 1px;        /* толщина линии */
+    background: currentColor;
 }
 
 /* Аккордеон */

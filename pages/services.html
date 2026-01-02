@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../css/services.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <script src="../js/components.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/translate.js" defer></script>
 </head>
 <body>
 
@@ -22,10 +24,10 @@
 
            <a href="event.html?type=wedding" class="split-link">
                 <div class="services-content">
-                    <h2 class="services-main-text">СВАДЕБНЫЕ МЕРОПРИЯТИЯ</h2>
+                    <h2 class="services-main-text" data-i18n="wedding_events"></h2>
 
                     <div class="half-ellipse">
-                        <span class="services-price">от 1000$</span>
+                        <span class="services-price" data-i18n="wedding_price"></span>
                     </div>
                 </div>
            </a>
@@ -37,10 +39,10 @@
             <div class="overlay"></div>
             <a href="event.html?type=corporate" class="split-link">
                 <div class="services-content">
-                    <h2 class="services-main-text">Корпоратив <br> День рождение</h2>
+                    <h2 class="services-main-text" data-i18n="corporate_birthday"></h2>
 
                     <div class="half-ellipse">
-                        <span class="services-price">от 120$/час</span>
+                        <span class="services-price" data-i18n="corporate_price"></span>
                     </div>
                 </div>
             </a>
@@ -53,10 +55,10 @@
 
            <a href="event.html?type=ceremony" class="split-link">
             <div class="services-content">
-                <h2 class="services-main-text">Церемония и обновление клятв</h2>
+                <h2 class="services-main-text" data-i18n="ceremony_vows"></h2>
 
                 <div class="half-ellipse">
-                    <span class="services-price">от 300$</span>
+                    <span class="services-price" data-i18n="ceremony_price"></span>
                 </div>
             </div>
            </a>
@@ -71,10 +73,10 @@
 
             <a href="event.html?type=genderparty" class="split-link">
             <div class="services-content">
-                <h2 class="services-main-text">Гендер Пати</h2>
+                <h2 class="services-main-text" data-i18n="gender_party"></h2>
 
                 <div class="half-ellipse">
-                    <span class="services-price">от 200$</span>
+                    <span class="services-price" data-i18n="gender_price"></span>
                 </div>
             </div>
             </a>
@@ -82,18 +84,8 @@
 
        <div class="services-card">
             <div class="services-content-without-img">
-                <h2 class="services-main-text-without-img">Каждое событие — это история</h2>
-                <span class="services-span-text">
-                    История любви, семьи, дружбы, побед,<br>
-                    вдохновения. И моя задача — сделать так,<br>
-                    чтобы эта история звучала ярко, искренне и <br>
-                    по-настоящему «вашей». <br>
-                    Я верю, что хорошая атмосфера рождается <br>
-                    из деталей: из правильно подобранных слов,<br>
-                    вовремя сказанных тостов, лёгкого юмора и <br>
-                    настоящего участия. Я не просто веду <br>
-                        праздник — я проживаю его вместе с вами.
-                </span>
+                <h2 class="services-main-text-without-img" data-i18n="every_event_story"></h2>
+                <span class="services-span-text" data-i18n="every_event_text"></span>
             </div>
        </div>
 
@@ -104,10 +96,10 @@
 
            <a href="event.html?type=graduation" class="split-link">
             <div class="services-content">
-                <h2 class="services-main-text">Выпускной</h2>
+                <h2 class="services-main-text" data-i18n="graduation"></h2>
 
                 <div class="half-ellipse">
-                    <span class="services-price">от 700$</span>
+                    <span class="services-price" data-i18n="graduation_price"></span>
                 </div>
             </div>
            </a>
@@ -119,17 +111,14 @@
 <section class="services-section2">
     <div class="div-split2">
         <div class="div-left-facts-services">
-            <h2 class="main-text-facts">КАК ПРОХОДИТ ПОДГОТОВКА?</h2>
+            <h2 class="main-text-facts" data-i18n="prep_title"></h2>
 
             <div class="div-fact-item">
                 <div class="div-fact-item-number">
                     <span class="fact-item-number">1</span>
                 </div>
                 <div class="div-fact-item-text">
-                    <span class="fact-item-text">
-                        Заполнить анкету на сайте или написать <br>
-                        мне в любом удобном для Вас мессенджере
-                    </span>
+                    <span class="fact-item-text" data-i18n="step_1"></span>
                 </div>
             </div>
 
@@ -138,10 +127,7 @@
                     <span class="fact-item-number">2</span>
                 </div>
                 <div class="div-fact-item-text">
-                    <span class="fact-item-text">
-                        Обсуждение условий сотрудничества,<br>
-                        затем внесение аванса для брони даты
-                    </span>
+                    <span class="fact-item-text" data-i18n="step_2"></span>
                 </div>
             </div>
 
@@ -150,10 +136,7 @@
                     <span class="fact-item-number">3</span>
                 </div>
                 <div class="div-fact-item-text">
-                    <span class="fact-item-text">
-                        Выбор времени и формата для обсуждения <br>
-                        и первого знакомства (встреча/созвон)
-                    </span>
+                    <span class="fact-item-text" data-i18n="step_3"></span>
                 </div>
             </div>
 
@@ -162,13 +145,10 @@
                     <span class="fact-item-number">4</span>
                 </div>
                 <div class="div-fact-item-text">
-                    <span class="fact-item-text">
-                        Анкетирование и последующие встречи <br>
-                        для утверждения сценария мероприятия
-                    </span>
+                    <span class="fact-item-text" data-i18n="step_4"></span>
                 </div>
             </div>
-            <a href="book.html"><button class="btn-second-non-active">Анкета</button></a>
+            <a href="book.html"><button class="btn-second-non-active" data-i18n="form_button"></button></a>
         </div>
 
         <div class="div-right-fact-services">
