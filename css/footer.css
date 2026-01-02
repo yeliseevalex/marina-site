@@ -63,6 +63,10 @@ footer{
     font-weight: 400;
 }
 
+.link-footer:hover{
+    font-weight: 700;
+}
+
 .link-footer::after {
     content: "";
     position: absolute;

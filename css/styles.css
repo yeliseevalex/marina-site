@@ -653,6 +653,7 @@ section{
 .div-small-split-review-text {
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -668,6 +669,12 @@ section{
     font-family: 'Playfair';
     font-style: normal;
     font-weight: 400;
+}
+
+.div-small-split-review-text button{
+    width: clamp(160px, 13vw, 245px);
+    height: clamp(40px, 5.5vh, 56px);
+    font-size: clamp(18px, 1.6vw, 36px);
 }
 
 .section-5 .t-underline-b {

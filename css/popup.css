@@ -1,168 +1,3 @@
-html, body{
-    margin: 0;
-    font-family: "Playfair", serif;
-    background-color: #FAF9F6;
-}
-
-* {
-    font-family: 'Playfair Display', serif;
-}
-
-
-section{
-    margin: 0;
-}
-
-/*SECTION 1*/
-.event-section-1{
-     margin-top: 100px;
-}
-
-.div-split2{
-    display: flex;
-}
-
-.div-left{
-    width: 40%;
-}
-
-.main-event-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.div-right{
-    width: 60%;
-    background-color: #FAF9F6;
-}
-
-.div-main-event-text{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 5vh;
-    font-family: 'Playfair';
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-}
-
-.main-event-text{
-    margin: 0;
-    margin-bottom: 3vh;
-    font-size: clamp(28px, 2.2vw, 45px);
-    color: #817773;
-    font-weight: normal;
-}
-
-.main-event-subtext{
-    font-size: clamp(16px, 1.3vw, 24px);
-    letter-spacing: 0.15em;
-    line-height: 1.8;
-    color: #817773;
-    max-width: 65ch;
-    text-align: justify;
-    font-family: 'Playfair';
-    font-style: normal;
-    font-weight: 400;
-}
-
-.event-subtext-italic{
-    font-family: 'Playfair';
-    font-style: italic;
-    font-weight: 400;
-}
-
-.event-subtext-bold{
-    font-family: 'Playfair';
-    font-style: normal;
-    font-weight: 900;
-}
-
-
-
-/* SECTION 2 */
-/* ---------- Для слайдера (если нужно) ---------- */
-
-.div-slider {
-    margin-top: -5px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.div-slider-content {
-    display: flex;
-    transition: transform 0.1s linear; /* плавное движение */
-}
-
-.slider-img {
-    width: 25%;
-    flex-shrink: 0;
-    object-fit: cover;
-}
-
-/* SECTION 3 */
-.event-section-3 .div-split2{
-    flex-direction: row-reverse;
-}
-
-/* SECTION 4 */
-
-.event-section-4{
-    margin-bottom: 10vh;
-}
-
-.div-container-wed-section4{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.div-col-in-container{
-    display: flex;
-    flex-direction: column;
-    width: 33.33%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.div-text-in-container{
-    max-width: 45ch;
-    line-height: 1.7;
-    letter-spacing: 0.15em;
-    margin: 6.5vh 0 4vh 0;
-}
-
-.text-in-container{
-    font-size: clamp(16px, 1.5vw, 30px);
-    color: #817773;
-    font-family: 'Playfair';
-    font-style: normal;
-    font-weight: 600;
-}
-
-.btn-second-non-active{
-    width: clamp(160px, 12vw, 300px);
-    height: clamp(50px, 3.5vw, 70px);
-    color: #FAF9F6;
-    background-color: #9E9794;
-    border: 1.5px solid #FAF9F6;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: clamp(22px, 1.8vw, 34px);
-
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-second-non-active:hover {
-    color: #FAF9F6;
-    background-color: #817773;
-}
-
-
 /* POPUP */
 .popup {
     position: fixed;
@@ -209,7 +44,7 @@ section{
 }
 
 /* SLIDER BASE */
-.slides-container {
+.popup .slides-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -218,7 +53,7 @@ section{
     transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+.popup .slide {
     min-width: 100%;
     height: 100%;
     display: flex;
@@ -230,35 +65,35 @@ section{
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.slide.active {
+.popup .slide.active {
     opacity: 1;
     transform: translateX(0);
 }
 
-.slide.prev {
+.popup .slide.prev {
     opacity: 0;
     transform: translateX(-100%);
 }
 
-.slide.active {
+.popup .slide.active {
     opacity: 1;
     position: absolute;
 }
 
 /* LEFT PHOTO */
-.slide-left {
+.popup .slide-left {
     width: 30%;
     overflow: hidden;
 }
 
-.slide-left img {
+.popup .slide-left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 /* RIGHT TEXT + MINI PHOTOS */
-.slide-right {
+.popup .slide-right {
     flex: 1;
     padding: 40px;
     display: flex;
@@ -268,7 +103,7 @@ section{
     overflow: hidden;
 }
 
-.slide-text {
+.popup .slide-text {
     display: inline;
     font-size: clamp(16px, 1.4vw, 24px);
     line-height: 1.85;
@@ -280,7 +115,7 @@ section{
     font-weight: 400;
 }
 
-.read-more-text {
+.popup .read-more-text {
   display: inline;
   font-size: clamp(16px, 1.4vw, 24px);
   margin-left: 4px;
@@ -294,26 +129,26 @@ letter-spacing: 0.15em;
 }
 
 
-.slide-text-wrapper {
+.popup .slide-text-wrapper {
     display: inline;         /* сколько строк показывать */
     overflow: hidden;
     transition: max-height 0.5s ease;
 }
 
-.slide-text-wrapper.expanded {
+.popup .slide-text-wrapper.expanded {
     -webkit-line-clamp: unset;
     max-height: 60%;
     overflow-y: auto;
 }
 
 /* THUMBS */
-.slide-thumbs {
+.popup .slide-thumbs {
     display: flex;
     gap: 10px;
     height: 40%;
 }
 
-.slide-thumbs img {
+.popup .slide-thumbs img {
     width: calc(33.33% - 6px);
     border-radius: 8px;
     object-fit: cover;
@@ -321,7 +156,7 @@ letter-spacing: 0.15em;
 
 
 /* ARROWS */
-.slider-arrow {
+.popup .slider-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -336,20 +171,20 @@ letter-spacing: 0.15em;
 }
 
 
-.slider-arrow.left {
+.popup .slider-arrow.left {
     left: 20px;
 }
 
-.slider-arrow.right {
+.popup .slider-arrow.right {
     right: 20px;
 }
-.slide-left {
+.popup .slide-left {
     position: relative;
     overflow: hidden;
 }
 
 /* Отзыв занимает всё изображение при открытии */
-.review-content {
+.popup .review-content-popup {
     position: absolute;
     bottom: -100%;
     left: 0;
@@ -364,7 +199,7 @@ letter-spacing: 0.15em;
 }
 
 /* Overlay с кнопкой */
-.bottom-overlay {
+.popup .bottom-overlay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,7 +217,7 @@ letter-spacing: 0.15em;
 }
 
 /* Стрелка */
-.review-arrow{
+.popup .review-arrow{
     transform: rotate(90deg);
     width: clamp(15px, 1.4vw, 25px);
     height: auto;
@@ -391,28 +226,28 @@ letter-spacing: 0.15em;
 }
 
 /* Класс при открытии */
-.bottom-open .review-content {
+.popup .bottom-open .review-content-popup {
     bottom: 0;
 }
 
 /* Поворот стрелки и скрытие текста */
-.bottom-open .review-arrow {
+.popup .bottom-open .review-arrow {
     transform: rotate(270deg); /* исходно 90, при открытии 270 = 180° поворот */
 }
 
-.bottom-open .review-text {
+.popup .bottom-open .review-text {
     opacity: 0;
     visibility: hidden;
 }
 
 /* Стрелка перемещается наверх при открытии */
-.bottom-open .bottom-overlay {
+.popup .bottom-open .bottom-overlay {
     top: 0;
     bottom: auto;
     background: none;
 }
 
-.review-open-text{
+.popup .review-open-text{
     font-family: 'Playfair';
     font-style: normal;
     font-weight: 400;
@@ -422,7 +257,7 @@ letter-spacing: 0.15em;
     color: #FAF9F6;
 }
 
-.read-more-text-review{
+.popup .read-more-text-review{
     font-family: 'Playfair';
     font-style: normal;
     font-weight: 700;

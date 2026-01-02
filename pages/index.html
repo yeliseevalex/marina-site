@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Main</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
     <script src="../js/components.js" defer></script>
+    <script src="../js/popupData.js" defer></script>
+    <script src="../js/randomReview.js" defer></script>
 </head>
 <body>
 
@@ -196,6 +199,7 @@
 
         <div class="div-small-split-review-text">
             <h2 class="main-text-review">ПАРА ТЕПЛЫХ СЛОВ <br> ОТ СЧАСТЛИВЫХ <br> КЛИЕНТОВ</h2>
+            <button class="btn-second-non-active" id="btn-open-popup">Отзывы</button>
         </div>
     </div>
 
@@ -231,6 +235,18 @@
     </div>
 
 </section>
+
+<!-- POPUP -->
+<div class="popup" id="portfolioPopup">
+    <div class="popup-content slider-wrapper">
+        <span class="popup-close">&times;</span>
+
+        <button class="slider-arrow left" id="slidePrev">&#10094;</button>
+        <button class="slider-arrow right" id="slideNext">&#10095;</button>
+
+        <div class="slides-container" id="popupSlides"></div>
+    </div>
+</div>
 
 <!--MAIN PAGE SECTION 6-->
 <section class="section-6">
